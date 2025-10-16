@@ -6,11 +6,15 @@ from typing import Dict, List, Optional, Any
 from datetime import datetime, timedelta
 from sqlalchemy import Engine, create_engine
 
+# gets an environment variable to avoid "hard-coding" in the API key
+API_KEY = os.environ.get("AVIATIONSTACK_API_KEY")
+# the Aviationstack API base url
 BASE_URL = "https://api.aviationstack.com/v1"
 
-# initializing an environment variable to avoid "hard-coding" in the API key
-API_KEY = os.environ.get("AVIATIONSTACK_API_KEY")
-
+# pick a single day
+start_date = "2025-09-20"  
+# pick an airport (IATA code)
+airport = "MCO"                 
 
 # defining a new class that contains the logic to call the API
 class AviationStackClient: 
@@ -117,12 +121,12 @@ def clean_dataframe(items):
     return df
 
 # fetch the raw dep and arr data starting from a given date and return a df with both sets of data combined
-def collect_day(client: AviationStackClient, date_str: str, airport: str = "MCO"):
+def collect_day(client: AviationStackClient, start_date: str, airport: str = airport):
     # (fetch_all returns a list of dictionaries)
-    # Pull flights for a single day: departures FROM MCO 
-    raw_dep = client.fetch_all("flights", {"dep_iata": airport, "flight_date": date_str})
-    # Pull flights for the same day: arrivals TO MCO
-    raw_arr = client.fetch_all("flights", {"arr_iata": airport, "flight_date": date_str})
+    # Pull flights for a single day: departures FROM an airport 
+    raw_dep = client.fetch_all("flights", {"dep_iata": airport, "flight_date": start_date})
+    # Pull flights for the same day: arrivals TO an airport
+    raw_arr = client.fetch_all("flights", {"arr_iata": airport, "flight_date": start_date})
 
     # Normalize each raw record "r" into a flat dictionary
     flat_dep = []
@@ -142,7 +146,7 @@ def collect_day(client: AviationStackClient, date_str: str, airport: str = "MCO"
     return df_day
 
 
-def collect_week(client: AviationStackClient, start_date: str, days: int = 7, airport: str = "MCO"):
+def collect_week(client: AviationStackClient, start_date: str, days: int = 7, airport: str = airport):
     # this will be the starting day (converted to a datetime object and getting only the day)
     start = datetime.strptime(start_date, "%Y-%m-%d").date()
     # this list will store the data frames collected for each day
@@ -163,10 +167,11 @@ def collect_week(client: AviationStackClient, start_date: str, days: int = 7, ai
     # Concatenate all days into one DataFrame
     return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
 
-def daily_core_metrics(df, airport="MCO"):
-    # total number of departures from MCO for a given date, renamed to "departures"
+# shows metrics like departures, arrivals, delayed dep/arr, and cancelled flights for a given day and airport
+def daily_core_metrics(df, airport=airport):
+    # total number of departures from "airport" for a given date, renamed to "departures"
     dep = df[df["dep_iata"] == airport].groupby("flight_date", dropna=False).size().rename("departures")
-    # total number of arrivals from MCO for a given date, renamed to "arrivals"
+    # total number of arrivals to "airport" for a given date, renamed to "arrivals"
     arr = df[df["arr_iata"] == airport].groupby("flight_date", dropna=False).size().rename("arrivals")
     # both arrivals and departures concatinated together
     daily = pd.concat([dep, arr], axis=1).fillna(0).astype(int)
@@ -185,78 +190,77 @@ def daily_core_metrics(df, airport="MCO"):
                  .fillna(0).astype(int))
 
 
-# number of flights per airline touching MCO
-def airline_mix_daily(df, airport="MCO"):
-    # rows where MCO is either the departure or arrival
+# number of flights per airline touching an airport
+def airline_mix_daily(df, airport=airport):
+    # rows where "airport" is either the departure or arrival
     mask = (df["dep_iata"].eq(airport)) | (df["arr_iata"].eq(airport))
     out = (df[mask]
             .groupby(["flight_date", "airline_name","airline_iata"], dropna=False).size()
             .rename("flights").reset_index())
-
+    # returns a data frame that shows the date, airline, airline_iata, and num of flights for an airport
     return out.sort_values(["flight_date", "flights"], ascending=[True, False])
 
-def top_routes_from_mco_daily(df, airport="MCO", n=15):
-    # popular destinations flying out of MCO
+# returns the top 15 destinations from and top origins to an airport 
+def top_routes_from_airport_daily(df, airport, n=15):
+    # popular destinations flying out of "airport"
     dep_counts = (df[df["dep_iata"] == airport]
                 .groupby(["flight_date", "arr_iata"], dropna=False)
                 .size().rename("flights").reset_index()
                 .rename(columns={"arr_iata": "destination"}))
-
+    # sorting by flight_data/flights and grouping by flight_date
     dep_top = (dep_counts
             .sort_values(["flight_date", "flights"], ascending=[True, False])
             .groupby("flight_date", group_keys=False)
             .head(n))
     
-    # popular origins flying to MCO
+    # popular origins flying to "airport"
     arr_counts = (df[df["arr_iata"] == airport]
            .groupby(["flight_date", "dep_iata"], dropna=False)
            .size().rename("flights").reset_index()
            .rename(columns={"dep_iata": "origin"}))
-
+    # sorting by flight_data/flights and grouping by flight_date
     arr_top = (arr_counts
            .sort_values(["flight_date", "flights"], ascending=[True, False])
            .groupby("flight_date", group_keys=False)
            .head(n))
     
+    # replaces missing data with "Unknown"
     dep_top["destination"] = dep_top["destination"].fillna("Unknown")
     arr_top["origin"]      = arr_top["origin"].fillna("Unknown")
     
     return dep_top, arr_top
 
+# initialize the client object (requires AVIATIONSTACK_API_KEY)
+client = AviationStackClient() 
 
-# just collects data of a single day and prints to the console for testing purposes
-try:
-    client = AviationStackClient()  # requires AVIATIONSTACK_API_KEY
-    date_str = "2025-08-10"         # pick a single day
-    airport = "MCO"
+# # just collects data of a single day and prints to the console for testing purposes
+# try:
+#     # 1) Fetch + normalize + clean (one day)
+#     test_df_day = collect_day(client=client, start_date=start_date, airport=airport)
 
-    # 1) Fetch + normalize + clean (one day)
-    test_df_day = collect_day(client, date_str, airport)
+#     # 2) Basic sanity checks
+#     print(f"[TEST] Airport: {airport} | Date: {start_date}")
+#     print(f"[TEST] df_day shape: {test_df_day.shape}")             # (rows, cols)
+#     print(f"[TEST] Columns: {list(test_df_day.columns)}")
 
-    # 2) Basic sanity checks
-    print(f"[TEST] Airport: {airport} | Date: {date_str}")
-    print(f"[TEST] df_day shape: {test_df_day.shape}")             # (rows, cols)
-    print(f"[TEST] Columns: {list(test_df_day.columns)}")
+#     # peek a few rows (transpose for easier scanning of columns vs values)
+#     print("[TEST] Sample rows:")
+#     print(test_df_day.head(3).T)
 
-    # peek a few rows (transpose for easier scanning of columns vs values)
-    print("[TEST] Sample rows:")
-    print(test_df_day.head(3).T)
+#     # 3) Optionally run aggregations in-memory (still no writing)
+#     daily = daily_core_metrics(test_df_day, airport=airport)
+#     airlines = airline_mix_daily(test_df_day, airport=airport)
+#     top_from, top_to = top_routes_from_airport_daily(test_df_day, airport=airport, n=15)
 
-    # 3) Optionally run aggregations in-memory (still no writing)
-    daily = daily_core_metrics(test_df_day, airport=airport)
-    airlines = airline_mix_daily(test_df_day, airport=airport)
-    # top_to, top_from = top_routes_from_mco(test_df_day, airport=airport, n=10)
-    top_from, top_to = top_routes_from_mco_daily(test_df_day, airport="MCO", n=15)
+#     print(f"\n[TEST] daily_core_metrics:\n", daily)
+#     print(f"\n[TEST] airline_mix (top 5):\n", airlines.head())
+#     print(f"\n[TEST] top destinations from {airport}:\n", top_from)
+#     print(f"\n[TEST] top origins to {airport}:\n", top_to)
 
-    print("\n[TEST] daily_core_metrics:\n", daily)
-    print("\n[TEST] airline_mix (top 5):\n", airlines.head())
-    print("\n[TEST] top destinations from MCO:\n", top_from)
-    print("\n[TEST] top origins to MCO:\n", top_to)
+# except Exception as e:
+#     print("[Test] Failed with error:", repr(e))
 
-except Exception as e:
-    print("[Test] Failed with error:", repr(e))
-
-# gets the enviroment variable for the database URL to use with create_engine()
+# gets the enviroment variable for the database URL to use with create_engine() and returns the result
 def get_engine_from_url():
     url = os.environ.get("DB_URL")
     if not url:
@@ -266,40 +270,40 @@ def get_engine_from_url():
 # # initialize the client object
 # client = AviationStackClient() 
 
-# start_date = "2025-09-25"
+# saves the weekly data and drops duplicates
+df_week = collect_week(client, start_date, days=7, airport=airport).drop_duplicates(
+    subset=["flight_date","flight_iata","dep_scheduled","arr_scheduled"]
+    )
 
-# df_week = collect_week(client, start_date, days=7, airport="MCO").drop_duplicates(
-#     subset=["flight_date","flight_iata","dep_scheduled","arr_scheduled"]
-#     )
+# Core (arrivals vs departures + reliability)
+daily = daily_core_metrics(df_week, airport=airport)
+# -> columns: departures, arrivals, delayed_departures, delayed_arrivals, cancelled_flights
 
-# # Core (arrivals vs departures + reliability)
-# daily = daily_core_metrics(df_week, airport="MCO")
-# # -> columns: departures, arrivals, delayed_departures, delayed_arrivals, cancelled_flights
+# Airline mix
+airlines = airline_mix_daily(df_week, airport=airport)
 
-# # Airline mix
-# airlines = airline_mix_daily(df_week, airport="MCO")
+# Top routes
+top_from, top_to = top_routes_from_airport_daily(df_week, airport=airport, n=15)
 
-# # Top routes
-# top_from, top_to = top_routes_from_mco_daily(df_week, airport="MCO", n=15)
+# path to the folder that will store the flight data CSVs
+path = "/Users/garymontero/Documents/CEN4930C - SASD/DIY_API_Project/API_flight_data/"
 
+# (Optional) save for Tableau
+daily.to_csv(f"{path}daily_core_metrics_{start_date}.csv", index=True, index_label="flight_date")   # index is flight_date
+airlines.to_csv(f"{path}airline_mix_{start_date}.csv", index=False)
+top_to.to_csv(f"{path}top_routes_to_{airport}_{start_date}.csv", index=False)
+top_from.to_csv(f"{path}top_routes_from_{airport}_{start_date}.csv", index=False)
 
-# path = "/Users/garymontero/Documents/CEN4930C - SASD/DIY_API_Project/API_flight_data/"
+# get_engine_from_url() returns the result of create_engine(), which is then stored in a variable "engine"
+engine = get_engine_from_url()
 
-# # (Optional) save for Tableau
-# daily.to_csv(f"{path}daily_core_metrics_{start_date}.csv", index=True, index_label="flight_date")   # index is flight_date
-# airlines.to_csv(f"{path}airline_mix_{start_date}.csv", index=False)
-# top_to.to_csv(f"{path}top_routes_to_MCO_{start_date}.csv", index=False)
-# top_from.to_csv(f"{path}top_routes_from_MCO_{start_date}.csv", index=False)
+daily_out = daily.reset_index()
+daily_out["flight_date"] = pd.to_datetime(daily_out["flight_date"]).dt.date
+daily_out.to_sql("daily_metrics", engine, if_exists="replace", index=False)
 
-# engine = get_engine_from_url()
-
-# daily_out = daily.reset_index()
-# daily_out["flight_date"] = pd.to_datetime(daily_out["flight_date"]).dt.date
-# daily_out.to_sql("daily_metrics", engine, if_exists="replace", index=False)
-
-# airlines.to_sql("airline_mix_daily", engine, if_exists="replace", index=False)
-# top_from.to_sql("routes_from_mco_daily", engine, if_exists="replace", index=False)
-# top_to.to_sql("routes_to_mco_daily", engine, if_exists="replace", index=False)
+airlines.to_sql("airline_mix_daily", engine, if_exists="replace", index=False)
+top_from.to_sql(f"routes_from_{airport}_daily", engine, if_exists="replace", index=False)
+top_to.to_sql(f"routes_to_{airport}_daily", engine, if_exists="replace", index=False)
 
 # # Run this after the first week's data is saved
 # daily_out = daily.reset_index()
@@ -307,32 +311,29 @@ def get_engine_from_url():
 # daily_out.to_sql("daily_metrics", engine, if_exists="append", index=False)
 
 # airlines.to_sql("airline_mix_daily", engine, if_exists="append", index=False)
-# top_from.to_sql("routes_from_mco_daily", engine, if_exists="append", index=False)
-# top_to.to_sql("routes_to_mco_daily", engine, if_exists="append", index=False)
+# top_from.to_sql(f"routes_from_{airport}_daily", engine, if_exists="append", index=False)
+# top_to.to_sql(f"routes_to_{airport}_daily", engine, if_exists="append", index=False)
 
 
-
-# engine = create_engine("mysql+pymysql://host:CeN4930C@127.0.0.0:3306/air_traffic_trends")
-
-
-# def save_one_day_outputs(date_str="2025-08-05", airport="MCO"):
+# # this is a test function for saving to a CSV and the database
+# def save_one_day_outputs(start_date=start_date, airport=airport):
 #     # 1) collect one day
 #     client = AviationStackClient()
-#     df_day = collect_day(client, date_str=date_str, airport=airport)
+#     df_day = collect_day(client, start_date=start_date, airport=airport)
 
 #     # 2) aggregations (in-memory)
 #     daily     = daily_core_metrics(df_day, airport=airport)
 #     airlines  = airline_mix(df_day, airport=airport)
-#     top_from, top_to = top_routes_from_mco(df_day, airport=airport, n=15)
+#     top_from, top_to = top_routes_from_airport_daily(df_day, airport=airport, n=15)
 
 # path = "/Users/garymontero/Documents/CEN4930C - SASD/DIY_API_Project/API_flight_data/"
 
 #     # 3) write CSVs (nice to eyeball or publish to Tableau)
-#     daily.to_csv(f"{path}daily_core_metrics_{date_str}.csv", index=True)  # flight_date remains index
-#     airlines.to_csv(f"{path}airline_mix_{date_str}.csv", index=False)
-#     top_from.to_csv(f"{path}top_routes_from_MCO_{date_str}.csv", index=False)
-#     top_to.to_csv(f"{path}top_routes_to_MCO_{date_str}.csv", index=False)
-#     print("[SAVE] CSVs written for", date_str)
+#     daily.to_csv(f"{path}daily_core_metrics_{start_date}.csv", index=True)  # flight_date remains index
+#     airlines.to_csv(f"{path}airline_mix_{start_date}.csv", index=False)
+#     top_from.to_csv(f"{path}top_routes_from_{airport}_{start_date}.csv", index=False)
+#     top_to.to_csv(f"{path}top_routes_to_{airport}_{start_date}.csv", index=False)
+#     print("[SAVE] CSVs written for", start_date)
 
 #     # 4) write to MySQL (env-driven engine)
 #     engine = get_engine_from_url()
@@ -340,13 +341,13 @@ def get_engine_from_url():
 #     # Important: bring flight_date out of the index before writing
 #     daily.reset_index().to_sql("one_day_metrics", engine, if_exists="replace", index=False)
 #     airlines.to_sql("airline_mix", engine, if_exists="replace", index=False)
-#     # FROM MCO (destination)
-#     top_from.to_sql("routes_from_mco", engine, if_exists="replace", index=False)
-#     # TO MCO (origin)
-#     top_to.to_sql("routes_to_mco", engine, if_exists="replace", index=False)
-#     print("[SAVE] MySQL tables written:", ["daily_metrics","airline_mix","aircraft_mix","routes_from_mco","routes_to_mco"])
+#     # FROM "airport" (destination)
+#     top_from.to_sql(f"routes_from_{airport}", engine, if_exists="replace", index=False)
+#     # TO "airport" (origin)
+#     top_to.to_sql(f"routes_to_{airport}", engine, if_exists="replace", index=False)
+#     print("[SAVE] MySQL tables written:", ["daily_metrics", "airline_mix", "aircraft_mix", f"routes_from_{airport}", f"routes_to_{airport}"])
 
 
 # if __name__ == "__main__":
 #     # run a one-day test write (CSV + DB)
-#     save_one_day_outputs(date_str="2025-08-05", airport="MCO")
+#     save_one_day_outputs(start_date=start_date, airport=airport)
