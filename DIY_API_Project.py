@@ -12,9 +12,9 @@ API_KEY = os.environ.get("AVIATIONSTACK_API_KEY")
 BASE_URL = "https://api.aviationstack.com/v1"
 
 # pick a single day
-start_date = "2025-09-20"  
+start_date = "2025-10-16"
 # pick an airport (IATA code)
-airport = "MCO"                 
+airport = "MCO"
 
 # defining a new class that contains the logic to call the API
 class AviationStackClient: 
@@ -163,7 +163,7 @@ def collect_week(client: AviationStackClient, start_date: str, days: int = 7, ai
         # adds the data frame to the frames list
         frames.append(df_day)
         # adds some buffertime between days 
-        time.sleep(0.3)
+        time.sleep(0.2)
     # Concatenate all days into one DataFrame
     return pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
 
@@ -288,7 +288,7 @@ top_from, top_to = top_routes_from_airport_daily(df_week, airport=airport, n=15)
 # path to the folder that will store the flight data CSVs
 path = "/Users/garymontero/Documents/CEN4930C - SASD/DIY_API_Project/API_flight_data/"
 
-# (Optional) save for Tableau
+# save for records
 daily.to_csv(f"{path}daily_core_metrics_{start_date}.csv", index=True, index_label="flight_date")   # index is flight_date
 airlines.to_csv(f"{path}airline_mix_{start_date}.csv", index=False)
 top_to.to_csv(f"{path}top_routes_to_{airport}_{start_date}.csv", index=False)
@@ -297,22 +297,23 @@ top_from.to_csv(f"{path}top_routes_from_{airport}_{start_date}.csv", index=False
 # get_engine_from_url() returns the result of create_engine(), which is then stored in a variable "engine"
 engine = get_engine_from_url()
 
-daily_out = daily.reset_index()
-daily_out["flight_date"] = pd.to_datetime(daily_out["flight_date"]).dt.date
-daily_out.to_sql("daily_metrics", engine, if_exists="replace", index=False)
-
-airlines.to_sql("airline_mix_daily", engine, if_exists="replace", index=False)
-top_from.to_sql(f"routes_from_{airport}_daily", engine, if_exists="replace", index=False)
-top_to.to_sql(f"routes_to_{airport}_daily", engine, if_exists="replace", index=False)
-
-# # Run this after the first week's data is saved
+# # run this only once to create the tables
 # daily_out = daily.reset_index()
 # daily_out["flight_date"] = pd.to_datetime(daily_out["flight_date"]).dt.date
-# daily_out.to_sql("daily_metrics", engine, if_exists="append", index=False)
+# daily_out.to_sql("daily_metrics", engine, if_exists="replace", index=False)
 
-# airlines.to_sql("airline_mix_daily", engine, if_exists="append", index=False)
-# top_from.to_sql(f"routes_from_{airport}_daily", engine, if_exists="append", index=False)
-# top_to.to_sql(f"routes_to_{airport}_daily", engine, if_exists="append", index=False)
+# airlines.to_sql("airline_mix_daily", engine, if_exists="replace", index=False)
+# top_from.to_sql(f"routes_from_{airport}_daily", engine, if_exists="replace", index=False)
+# top_to.to_sql(f"routes_to_{airport}_daily", engine, if_exists="replace", index=False)
+
+# Run this after the first week's data is saved
+daily_out = daily.reset_index()
+daily_out["flight_date"] = pd.to_datetime(daily_out["flight_date"]).dt.date
+daily_out.to_sql("daily_metrics", engine, if_exists="append", index=False)
+
+airlines.to_sql("airline_mix_daily", engine, if_exists="append", index=False)
+top_from.to_sql(f"routes_from_{airport.lower()}_daily", engine, if_exists="append", index=False)
+top_to.to_sql(f"routes_to_{airport.lower()}_daily", engine, if_exists="append", index=False)
 
 
 # # this is a test function for saving to a CSV and the database

@@ -1,0 +1,602 @@
+flight_date,airline_name,airline_iata,flights
+2025-08-07,Southwest Airlines,WN,187
+2025-08-07,Delta Air Lines,DL,126
+2025-08-07,JetBlue Airways,B6,112
+2025-08-07,Spirit Airlines,NK,98
+2025-08-07,American Airlines,AA,96
+2025-08-07,Frontier Airlines,F9,91
+2025-08-07,Azul,AD,84
+2025-08-07,United Airlines,UA,78
+2025-08-07,Virgin Atlantic,VS,64
+2025-08-07,LATAM Airlines,LA,58
+2025-08-07,Volaris,Y4,53
+2025-08-07,Qatar Airways,QR,35
+2025-08-07,WestJet,WS,31
+2025-08-07,Copa Airlines,CM,29
+2025-08-07,Gol,G3,29
+2025-08-07,Air Canada,AC,28
+2025-08-07,Aeromexico,AM,26
+2025-08-07,British Airways,BA,26
+2025-08-07,Air France,AF,24
+2025-08-07,Air New Zealand,NZ,23
+2025-08-07,KLM,KL,23
+2025-08-07,Breeze Airways,MX,22
+2025-08-07,El Al,LY,17
+2025-08-07,Hawaiian Airlines,HA,17
+2025-08-07,Iberia,IB,17
+2025-08-07,Aer Lingus,EI,16
+2025-08-07,Icelandair,FI,12
+2025-08-07,Korean Air,KE,11
+2025-08-07,Qantas,QF,11
+2025-08-07,Air Canada Rouge,RV,10
+2025-08-07,Alaska Airlines,AS,10
+2025-08-07,FedEx,FX,9
+2025-08-07,Lufthansa,LH,9
+2025-08-07,TAP Air Portugal,TP,9
+2025-08-07,empty,,9
+2025-08-07,Brussels Airlines,SN,8
+2025-08-07,SA AVIANCA,AV,8
+2025-08-07,SAS,SK,8
+2025-08-07,Etihad Airways,EY,7
+2025-08-07,Japan Airlines,JL,7
+2025-08-07,Singapore Airlines,SQ,7
+2025-08-07,UPS Airlines,5X,7
+2025-08-07,Air Tahiti Nui,TN,6
+2025-08-07,Air Transat,TS,6
+2025-08-07,AlphaSky,AS,6
+2025-08-07,LOT - Polish Airlines,LO,6
+2025-08-07,Turkish Airlines,TK,6
+2025-08-07,ANA,NH,5
+2025-08-07,Air Europa,UX,5
+2025-08-07,Alitalia,AZ,5
+2025-08-07,Bahamasair,UP,5
+2025-08-07,Austrian,OS,4
+2025-08-07,Cathay Pacific,CX,4
+2025-08-07,Kenya Airways,KQ,4
+2025-08-07,SWISS,LX,4
+2025-08-07,Virgin Australia,VA,4
+2025-08-07,Aerolineas Argentinas,AR,3
+2025-08-07,Discover Airlines,4Y,3
+2025-08-07,Royal Jordanian,RJ,3
+2025-08-07,Sun Country Airlines,SY,3
+2025-08-07,Baron Aviation Services,BVN,2
+2025-08-07,Emirates,EK,2
+2025-08-07,Finnair,AY,2
+2025-08-07,Flexjet,LXJ,2
+2025-08-07,Malaysia Airlines,MH,2
+2025-08-07,Philippine Airlines,PR,2
+2025-08-07,Porter,PD,2
+2025-08-07,Porter Airlines Canada,PD,2
+2025-08-07,Saudia,SV,2
+2025-08-07,VivaAerobus,VB,2
+2025-08-07,21 Air,2I,1
+2025-08-07,Air Serbia,JU,1
+2025-08-07,AirNet,USC,1
+2025-08-07,Alaska Airlines (UNCF Livery),AS,1
+2025-08-07,Allegiant Air,G4,1
+2025-08-07,Amerijet International,M6,1
+2025-08-07,Avelo Airlines,XP,1
+2025-08-07,China Eastern Airlines,MU,1
+2025-08-07,Condor,DE,1
+2025-08-07,Fiji Airways,FJ,1
+2025-08-07,Gulf Air,GF,1
+2025-08-07,Mountain Air Cargo,C2,1
+2025-08-07,NetJets Aviation,1I,1
+2025-08-07,Norse,N0,1
+2025-08-07,Royal Air Maroc,AT,1
+2025-08-07,Wheels Up,,1
+2025-08-07,,A1,1
+2025-08-08,Southwest Airlines,WN,197
+2025-08-08,Delta Air Lines,DL,132
+2025-08-08,JetBlue Airways,B6,106
+2025-08-08,American Airlines,AA,93
+2025-08-08,Frontier Airlines,F9,93
+2025-08-08,Azul,AD,89
+2025-08-08,Spirit Airlines,NK,88
+2025-08-08,United Airlines,UA,80
+2025-08-08,Volaris,Y4,63
+2025-08-08,Virgin Atlantic,VS,59
+2025-08-08,LATAM Airlines,LA,55
+2025-08-08,Aeromexico,AM,32
+2025-08-08,British Airways,BA,32
+2025-08-08,WestJet,WS,32
+2025-08-08,Qatar Airways,QR,31
+2025-08-08,Copa Airlines,CM,29
+2025-08-08,Air Canada,AC,28
+2025-08-08,Air France,AF,27
+2025-08-08,Air New Zealand,NZ,25
+2025-08-08,Gol,G3,24
+2025-08-08,Hawaiian Airlines,HA,23
+2025-08-08,KLM,KL,23
+2025-08-08,Aer Lingus,EI,20
+2025-08-08,Breeze Airways,MX,18
+2025-08-08,Iberia,IB,16
+2025-08-08,Korean Air,KE,15
+2025-08-08,Qantas,QF,14
+2025-08-08,TAP Air Portugal,TP,14
+2025-08-08,AlphaSky,AS,12
+2025-08-08,Alaska Airlines,AS,11
+2025-08-08,SA AVIANCA,AV,11
+2025-08-08,Air Canada Rouge,RV,10
+2025-08-08,Brussels Airlines,SN,10
+2025-08-08,Japan Airlines,JL,10
+2025-08-08,Icelandair,FI,9
+2025-08-08,Lufthansa,LH,9
+2025-08-08,UPS Airlines,5X,8
+2025-08-08,ANA,NH,7
+2025-08-08,Air Transat,TS,7
+2025-08-08,Alitalia,AZ,6
+2025-08-08,SWISS,LX,6
+2025-08-08,Singapore Airlines,SQ,6
+2025-08-08,Virgin Australia,VA,6
+2025-08-08,empty,,6
+2025-08-08,Avelo Airlines,XP,5
+2025-08-08,Etihad Airways,EY,5
+2025-08-08,SAS,SK,5
+2025-08-08,Turkish Airlines,TK,5
+2025-08-08,Air Europa,UX,4
+2025-08-08,Air Tahiti Nui,TN,4
+2025-08-08,Austrian,OS,4
+2025-08-08,Emirates,EK,4
+2025-08-08,FedEx,FX,4
+2025-08-08,Finnair,AY,4
+2025-08-08,Porter Airlines,PD,4
+2025-08-08,Royal Air Maroc,AT,4
+2025-08-08,VivaAerobus,VB,4
+2025-08-08,Aerolineas Argentinas,AR,3
+2025-08-08,Allegiant Air,G4,3
+2025-08-08,LOT - Polish Airlines,LO,3
+2025-08-08,Porter,PD,3
+2025-08-08,Sun Country Airlines,SY,3
+2025-08-08,21 Air,2I,2
+2025-08-08,Bahamasair,UP,2
+2025-08-08,Cathay Pacific,CX,2
+2025-08-08,Discover Airlines,4Y,2
+2025-08-08,El Al,LY,2
+2025-08-08,Flexjet,LXJ,2
+2025-08-08,Malaysia Airlines,MH,2
+2025-08-08,NetJets Aviation,1I,2
+2025-08-08,Philippine Airlines,PR,2
+2025-08-08,Royal Jordanian,RJ,2
+2025-08-08,Air Serbia,JU,1
+2025-08-08,Aircraft Management Group,,1
+2025-08-08,Amerijet International,M6,1
+2025-08-08,Baron Aviation Services,BVN,1
+2025-08-08,Caribbean Airlines,BW,1
+2025-08-08,China Southern Airlines,CZ,1
+2025-08-08,Condor,DE,1
+2025-08-08,DHL Air,D0,1
+2025-08-08,Executive Flight Services,,1
+2025-08-08,Fiji Airways,FJ,1
+2025-08-08,Hex'Air,UD,1
+2025-08-08,Mountain Air Cargo,C2,1
+2025-08-08,Norse,N0,1
+2025-08-08,Norse UK,Z0,1
+2025-08-08,Porter Airlines Canada,PD,1
+2025-08-08,Quest Diagnostics,LBQ,1
+2025-08-08,Saudia,SV,1
+2025-08-08,Secure Air Charter,,1
+2025-08-08,Thrive,,1
+2025-08-08,Wheels Up,,1
+2025-08-08,,A1,1
+2025-08-09,Southwest Airlines,WN,220
+2025-08-09,Delta Air Lines,DL,141
+2025-08-09,JetBlue Airways,B6,116
+2025-08-09,Spirit Airlines,NK,115
+2025-08-09,American Airlines,AA,105
+2025-08-09,Azul,AD,101
+2025-08-09,Frontier Airlines,F9,92
+2025-08-09,United Airlines,UA,81
+2025-08-09,Virgin Atlantic,VS,74
+2025-08-09,LATAM Airlines,LA,69
+2025-08-09,Volaris,Y4,60
+2025-08-09,WestJet,WS,45
+2025-08-09,Qatar Airways,QR,39
+2025-08-09,British Airways,BA,33
+2025-08-09,Copa Airlines,CM,33
+2025-08-09,Aeromexico,AM,27
+2025-08-09,Air Canada,AC,27
+2025-08-09,Air France,AF,27
+2025-08-09,Air New Zealand,NZ,27
+2025-08-09,Gol,G3,24
+2025-08-09,Aer Lingus,EI,23
+2025-08-09,KLM,KL,23
+2025-08-09,Hawaiian Airlines,HA,22
+2025-08-09,Breeze Airways,MX,21
+2025-08-09,Iberia,IB,18
+2025-08-09,Qantas,QF,16
+2025-08-09,Korean Air,KE,15
+2025-08-09,Air Canada Rouge,RV,14
+2025-08-09,Alaska Airlines,AS,14
+2025-08-09,Icelandair,FI,12
+2025-08-09,Lufthansa,LH,12
+2025-08-09,TAP Air Portugal,TP,12
+2025-08-09,Brussels Airlines,SN,11
+2025-08-09,AlphaSky,AS,9
+2025-08-09,Japan Airlines,JL,9
+2025-08-09,SA AVIANCA,AV,9
+2025-08-09,Etihad Airways,EY,8
+2025-08-09,Virgin Australia,VA,8
+2025-08-09,Air Tahiti Nui,TN,7
+2025-08-09,ANA,NH,6
+2025-08-09,Air Transat,TS,6
+2025-08-09,Austrian,OS,6
+2025-08-09,NetJets Aviation,1I,6
+2025-08-09,SAS,SK,6
+2025-08-09,SWISS,LX,6
+2025-08-09,LOT - Polish Airlines,LO,5
+2025-08-09,Singapore Airlines,SQ,5
+2025-08-09,empty,,5
+2025-08-09,Aerolineas Argentinas,AR,4
+2025-08-09,Avelo Airlines,XP,4
+2025-08-09,Discover Airlines,4Y,4
+2025-08-09,El Al,LY,4
+2025-08-09,Fiji Airways,FJ,4
+2025-08-09,Finnair,AY,4
+2025-08-09,Royal Jordanian,RJ,4
+2025-08-09,Air Europa,UX,3
+2025-08-09,Alitalia,AZ,3
+2025-08-09,Emirates,EK,3
+2025-08-09,FedEx,FX,3
+2025-08-09,Flexjet,LXJ,3
+2025-08-09,Malaysia Airlines,MH,3
+2025-08-09,Philippine Airlines,PR,3
+2025-08-09,Porter,PD,3
+2025-08-09,Royal Air Maroc,AT,3
+2025-08-09,Turkish Airlines,TK,3
+2025-08-09,UPS Airlines,5X,3
+2025-08-09,Atlas Air,5Y,2
+2025-08-09,Bahamasair,UP,2
+2025-08-09,BermudAir,2T,2
+2025-08-09,Cathay Pacific,CX,2
+2025-08-09,China Eastern Airlines,MU,2
+2025-08-09,Evelop Airlines,E9,2
+2025-08-09,Gulf Air,GF,2
+2025-08-09,Kenya Airways,KQ,2
+2025-08-09,Norse UK,Z0,2
+2025-08-09,Saudia,SV,2
+2025-08-09,Sun Country Airlines,SY,2
+2025-08-09,VivaAerobus,VB,2
+2025-08-09,,A1,2
+2025-08-09,21 Air,2I,1
+2025-08-09,Air China LTD,CA,1
+2025-08-09,Air Serbia,JU,1
+2025-08-09,Amerijet International,M6,1
+2025-08-09,China Southern Airlines,CZ,1
+2025-08-09,Ethiopian Airlines,ET,1
+2025-08-09,National Airlines,N8,1
+2025-08-09,Porter Airlines,PD,1
+2025-08-09,Porter Airlines Canada,PD,1
+2025-08-09,Thrive,,1
+2025-08-09,Wheels Up,,1
+2025-08-10,Southwest Airlines,WN,229
+2025-08-10,Delta Air Lines,DL,138
+2025-08-10,JetBlue Airways,B6,122
+2025-08-10,Spirit Airlines,NK,108
+2025-08-10,Azul,AD,104
+2025-08-10,American Airlines,AA,103
+2025-08-10,Frontier Airlines,F9,95
+2025-08-10,United Airlines,UA,86
+2025-08-10,LATAM Airlines,LA,69
+2025-08-10,Virgin Atlantic,VS,63
+2025-08-10,Volaris,Y4,56
+2025-08-10,Qatar Airways,QR,37
+2025-08-10,WestJet,WS,35
+2025-08-10,Copa Airlines,CM,33
+2025-08-10,British Airways,BA,31
+2025-08-10,Air Canada,AC,30
+2025-08-10,Aeromexico,AM,27
+2025-08-10,Aer Lingus,EI,26
+2025-08-10,Breeze Airways,MX,26
+2025-08-10,Air New Zealand,NZ,24
+2025-08-10,KLM,KL,24
+2025-08-10,Hawaiian Airlines,HA,23
+2025-08-10,Air France,AF,21
+2025-08-10,El Al,LY,20
+2025-08-10,Iberia,IB,18
+2025-08-10,Gol,G3,17
+2025-08-10,Korean Air,KE,16
+2025-08-10,Qantas,QF,14
+2025-08-10,SA AVIANCA,AV,14
+2025-08-10,TAP Air Portugal,TP,14
+2025-08-10,Alaska Airlines,AS,13
+2025-08-10,Icelandair,FI,13
+2025-08-10,Etihad Airways,EY,11
+2025-08-10,Japan Airlines,JL,9
+2025-08-10,Air Canada Rouge,RV,8
+2025-08-10,Air Tahiti Nui,TN,8
+2025-08-10,AlphaSky,AS,8
+2025-08-10,Brussels Airlines,SN,8
+2025-08-10,Lufthansa,LH,8
+2025-08-10,Singapore Airlines,SQ,7
+2025-08-10,Virgin Australia,VA,7
+2025-08-10,Air Transat,TS,6
+2025-08-10,Alitalia,AZ,6
+2025-08-10,Finnair,AY,6
+2025-08-10,SAS,SK,6
+2025-08-10,LOT - Polish Airlines,LO,5
+2025-08-10,Royal Air Maroc,AT,5
+2025-08-10,empty,,5
+2025-08-10,Air Europa,UX,4
+2025-08-10,Bahamasair,UP,4
+2025-08-10,FedEx,FX,4
+2025-08-10,Malaysia Airlines,MH,4
+2025-08-10,NetJets Aviation,1I,4
+2025-08-10,Philippine Airlines,PR,4
+2025-08-10,Turkish Airlines,TK,4
+2025-08-10,ANA,NH,3
+2025-08-10,Austrian,OS,3
+2025-08-10,Cathay Pacific,CX,3
+2025-08-10,Emirates,EK,3
+2025-08-10,Kenya Airways,KQ,3
+2025-08-10,Porter,PD,3
+2025-08-10,Porter Airlines,PD,3
+2025-08-10,Royal Jordanian,RJ,3
+2025-08-10,SWISS,LX,3
+2025-08-10,Aerolineas Argentinas,AR,2
+2025-08-10,Air Serbia,JU,2
+2025-08-10,Avelo Airlines,XP,2
+2025-08-10,China Eastern Airlines,MU,2
+2025-08-10,Discover Airlines,4Y,2
+2025-08-10,Norse UK,Z0,2
+2025-08-10,Saudia,SV,2
+2025-08-10,UPS Airlines,5X,2
+2025-08-10,VivaAerobus,VB,2
+2025-08-10,,A1,2
+2025-08-10,Alaska Airlines (Xáat Kwáani Livery),AS,1
+2025-08-10,Allegiant Air,G4,1
+2025-08-10,Atlantic Airways,RC,1
+2025-08-10,Ethiopian Airlines,ET,1
+2025-08-10,Fiji Airways,FJ,1
+2025-08-10,Gulf Air,GF,1
+2025-08-10,Norse,N0,1
+2025-08-10,Sun Country Airlines,SY,1
+2025-08-10,flyExclusive,,1
+2025-08-11,Southwest Airlines,WN,104
+2025-08-11,Delta Air Lines,DL,68
+2025-08-11,Azul,AD,62
+2025-08-11,American Airlines,AA,54
+2025-08-11,JetBlue Airways,B6,54
+2025-08-11,LATAM Airlines,LA,48
+2025-08-11,United Airlines,UA,48
+2025-08-11,Frontier Airlines,F9,46
+2025-08-11,Spirit Airlines,NK,44
+2025-08-11,Virgin Atlantic,VS,41
+2025-08-11,Volaris,Y4,32
+2025-08-11,Aeromexico,AM,22
+2025-08-11,British Airways,BA,22
+2025-08-11,Qatar Airways,QR,21
+2025-08-11,Copa Airlines,CM,20
+2025-08-11,Air Canada,AC,19
+2025-08-11,WestJet,WS,19
+2025-08-11,Air New Zealand,NZ,18
+2025-08-11,Gol,G3,17
+2025-08-11,Aer Lingus,EI,14
+2025-08-11,KLM,KL,14
+2025-08-11,Korean Air,KE,13
+2025-08-11,Air France,AF,12
+2025-08-11,Hawaiian Airlines,HA,12
+2025-08-11,Iberia,IB,11
+2025-08-11,El Al,LY,10
+2025-08-11,Qantas,QF,10
+2025-08-11,Breeze Airways,MX,9
+2025-08-11,Brussels Airlines,SN,8
+2025-08-11,ANA,NH,7
+2025-08-11,empty,,7
+2025-08-11,Alaska Airlines,AS,6
+2025-08-11,Icelandair,FI,6
+2025-08-11,Lufthansa,LH,6
+2025-08-11,TAP Air Portugal,TP,6
+2025-08-11,AlphaSky,AS,5
+2025-08-11,Etihad Airways,EY,5
+2025-08-11,SA AVIANCA,AV,5
+2025-08-11,SWISS,LX,5
+2025-08-11,Virgin Australia,VA,5
+2025-08-11,Air Canada Rouge,RV,4
+2025-08-11,Avelo Airlines,XP,4
+2025-08-11,Japan Airlines,JL,4
+2025-08-11,LOT - Polish Airlines,LO,4
+2025-08-11,Royal Air Maroc,AT,4
+2025-08-11,Royal Jordanian,RJ,4
+2025-08-11,Turkish Airlines,TK,4
+2025-08-11,Alitalia,AZ,3
+2025-08-11,Austrian,OS,3
+2025-08-11,Emirates,EK,3
+2025-08-11,Singapore Airlines,SQ,3
+2025-08-11,21 Air,2I,2
+2025-08-11,Aerolineas Argentinas,AR,2
+2025-08-11,Air Serbia,JU,2
+2025-08-11,Air Transat,TS,2
+2025-08-11,Bahamasair,UP,2
+2025-08-11,Cathay Pacific,CX,2
+2025-08-11,Discover Airlines,4Y,2
+2025-08-11,Fiji Airways,FJ,2
+2025-08-11,Finnair,AY,2
+2025-08-11,Norse UK,Z0,2
+2025-08-11,SAS,SK,2
+2025-08-11,Saudia,SV,2
+2025-08-11,Sun Country Airlines,SY,2
+2025-08-11,Air Europa,UX,1
+2025-08-11,Air Tahiti Nui,TN,1
+2025-08-11,Allegiant Air,G4,1
+2025-08-11,BellAir,,1
+2025-08-11,China Eastern Airlines,MU,1
+2025-08-11,Ethiopian Airlines,ET,1
+2025-08-11,FedEx,FX,1
+2025-08-11,Gulf Air,GF,1
+2025-08-11,Jet Rescue Air Ambulance,,1
+2025-08-11,Malaysia Airlines,MH,1
+2025-08-11,Mountain Air Cargo,C2,1
+2025-08-11,NetJets Aviation,1I,1
+2025-08-11,Norse,N0,1
+2025-08-11,Philippine Airlines,PR,1
+2025-08-11,Porter,PD,1
+2025-08-11,Porter Airlines,PD,1
+2025-08-11,Private owner,,1
+2025-08-11,Secure Air Charter,,1
+2025-08-11,Solairus Aviation,,1
+2025-08-11,VivaAerobus,VB,1
+2025-08-11,flyExclusive,,1
+2025-08-11,,A1,1
+2025-08-12,Delta Air Lines,DL,54
+2025-08-12,Southwest Airlines,WN,52
+2025-08-12,Azul,AD,47
+2025-08-12,American Airlines,AA,43
+2025-08-12,Spirit Airlines,NK,40
+2025-08-12,United Airlines,UA,40
+2025-08-12,JetBlue Airways,B6,38
+2025-08-12,LATAM Airlines,LA,35
+2025-08-12,Virgin Atlantic,VS,34
+2025-08-12,Frontier Airlines,F9,22
+2025-08-12,Volaris,Y4,20
+2025-08-12,Copa Airlines,CM,19
+2025-08-12,Aeromexico,AM,18
+2025-08-12,Air Canada,AC,16
+2025-08-12,Air France,AF,16
+2025-08-12,Air New Zealand,NZ,16
+2025-08-12,Qatar Airways,QR,16
+2025-08-12,British Airways,BA,14
+2025-08-12,WestJet,WS,14
+2025-08-12,KLM,KL,10
+2025-08-12,Aer Lingus,EI,9
+2025-08-12,Gol,G3,9
+2025-08-12,Iberia,IB,9
+2025-08-12,Korean Air,KE,9
+2025-08-12,El Al,LY,8
+2025-08-12,Hawaiian Airlines,HA,8
+2025-08-12,ANA,NH,7
+2025-08-12,Qantas,QF,7
+2025-08-12,empty,,7
+2025-08-12,AlphaSky,AS,6
+2025-08-12,Breeze Airways,MX,6
+2025-08-12,Air Canada Rouge,RV,5
+2025-08-12,Lufthansa,LH,5
+2025-08-12,Air Tahiti Nui,TN,4
+2025-08-12,Air Transat,TS,4
+2025-08-12,Cathay Pacific,CX,4
+2025-08-12,Icelandair,FI,4
+2025-08-12,SA AVIANCA,AV,4
+2025-08-12,SAS,SK,4
+2025-08-12,TAP Air Portugal,TP,4
+2025-08-12,Aerolineas Argentinas,AR,3
+2025-08-12,Alaska Airlines,AS,3
+2025-08-12,Alitalia,AZ,3
+2025-08-12,Bahamasair,UP,3
+2025-08-12,Brussels Airlines,SN,3
+2025-08-12,Etihad Airways,EY,3
+2025-08-12,Japan Airlines,JL,3
+2025-08-12,SWISS,LX,3
+2025-08-12,Singapore Airlines,SQ,3
+2025-08-12,Virgin Australia,VA,3
+2025-08-12,21 Air,2I,2
+2025-08-12,Air Europa,UX,2
+2025-08-12,Austrian,OS,2
+2025-08-12,China Eastern Airlines,MU,2
+2025-08-12,Fiji Airways,FJ,2
+2025-08-12,Finnair,AY,2
+2025-08-12,LOT - Polish Airlines,LO,2
+2025-08-12,NetJets Aviation,1I,2
+2025-08-12,Porter,PD,2
+2025-08-12,Porter Airlines,PD,2
+2025-08-12,UPS Airlines,5X,2
+2025-08-12,Baron Aviation Services,BVN,1
+2025-08-12,DHL Air,D0,1
+2025-08-12,Emirates,EK,1
+2025-08-12,Ethiopian Airlines,ET,1
+2025-08-12,EuroAtlantic Airways,YU,1
+2025-08-12,FedEx,FX,1
+2025-08-12,Gulf Air,GF,1
+2025-08-12,Kenya Airways,KQ,1
+2025-08-12,Malaysia Airlines,MH,1
+2025-08-12,Mountain Air Cargo,C2,1
+2025-08-12,Philippine Airlines,PR,1
+2025-08-12,PlaneSense,,1
+2025-08-12,Private owner,,1
+2025-08-12,Royal Jordanian,RJ,1
+2025-08-12,Sun Country Airlines,SY,1
+2025-08-12,Turkish Airlines,TK,1
+2025-08-12,Vista America,,1
+2025-08-13,Southwest Airlines,WN,75
+2025-08-13,Delta Air Lines,DL,59
+2025-08-13,Azul,AD,51
+2025-08-13,JetBlue Airways,B6,48
+2025-08-13,American Airlines,AA,41
+2025-08-13,United Airlines,UA,40
+2025-08-13,LATAM Airlines,LA,35
+2025-08-13,Spirit Airlines,NK,35
+2025-08-13,Virgin Atlantic,VS,33
+2025-08-13,Frontier Airlines,F9,25
+2025-08-13,Volaris,Y4,21
+2025-08-13,Aeromexico,AM,17
+2025-08-13,Copa Airlines,CM,17
+2025-08-13,WestJet,WS,17
+2025-08-13,Air Canada,AC,16
+2025-08-13,Air France,AF,16
+2025-08-13,KLM,KL,16
+2025-08-13,Air New Zealand,NZ,15
+2025-08-13,British Airways,BA,14
+2025-08-13,Korean Air,KE,13
+2025-08-13,Iberia,IB,12
+2025-08-13,Gol,G3,11
+2025-08-13,Qatar Airways,QR,11
+2025-08-13,El Al,LY,10
+2025-08-13,Qantas,QF,9
+2025-08-13,Air Canada Rouge,RV,8
+2025-08-13,Breeze Airways,MX,8
+2025-08-13,Aer Lingus,EI,7
+2025-08-13,AlphaSky,AS,6
+2025-08-13,Hawaiian Airlines,HA,6
+2025-08-13,TAP Air Portugal,TP,6
+2025-08-13,FedEx,FX,5
+2025-08-13,SAS,SK,5
+2025-08-13,UPS Airlines,5X,5
+2025-08-13,empty,,5
+2025-08-13,ANA,NH,4
+2025-08-13,Alitalia,AZ,4
+2025-08-13,Brussels Airlines,SN,4
+2025-08-13,Icelandair,FI,4
+2025-08-13,Japan Airlines,JL,4
+2025-08-13,Lufthansa,LH,4
+2025-08-13,Virgin Australia,VA,4
+2025-08-13,Vista America,,4
+2025-08-13,Air Europa,UX,3
+2025-08-13,SA AVIANCA,AV,3
+2025-08-13,Singapore Airlines,SQ,3
+2025-08-13,Air China LTD,CA,2
+2025-08-13,Air Tahiti Nui,TN,2
+2025-08-13,Air Transat,TS,2
+2025-08-13,Alaska Airlines,AS,2
+2025-08-13,Austrian,OS,2
+2025-08-13,Avelo Airlines,XP,2
+2025-08-13,Etihad Airways,EY,2
+2025-08-13,Finnair,AY,2
+2025-08-13,Kenya Airways,KQ,2
+2025-08-13,Malaysia Airlines,MH,2
+2025-08-13,Philippine Airlines,PR,2
+2025-08-13,Porter,PD,2
+2025-08-13,Royal Air Maroc,AT,2
+2025-08-13,Saudia,SV,2
+2025-08-13,Sun Country Airlines,SY,2
+2025-08-13,21 Air,2I,1
+2025-08-13,Amerijet International,M6,1
+2025-08-13,Bahamasair,UP,1
+2025-08-13,Baron Aviation Services,BVN,1
+2025-08-13,BellAir,,1
+2025-08-13,BermudAir,2T,1
+2025-08-13,Caribbean Airlines,BW,1
+2025-08-13,Cathay Pacific,CX,1
+2025-08-13,DHL Air,D0,1
+2025-08-13,Emirates,EK,1
+2025-08-13,EuroAtlantic Airways,YU,1
+2025-08-13,Fiji Airways,FJ,1
+2025-08-13,Fly Alliance,,1
+2025-08-13,Gulf Air,GF,1
+2025-08-13,Mountain Air Cargo,C2,1
+2025-08-13,NetJets Aviation,1I,1
+2025-08-13,Norse,N0,1
+2025-08-13,Norse UK,Z0,1
+2025-08-13,Royal Jordanian,RJ,1
+2025-08-13,SWISS,LX,1
+2025-08-13,Secure Air Charter,,1
+2025-08-13,Turkish Airlines,TK,1
+2025-08-13,,A1,1

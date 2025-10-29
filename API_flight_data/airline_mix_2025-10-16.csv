@@ -1,0 +1,543 @@
+flight_date,airline_name,airline_iata,flights
+2025-10-16,Southwest Airlines,WN,83
+2025-10-16,Delta Air Lines,DL,49
+2025-10-16,American Airlines,AA,46
+2025-10-16,Spirit Airlines,NK,38
+2025-10-16,Azul,AD,35
+2025-10-16,United Airlines,UA,33
+2025-10-16,Virgin Atlantic,VS,32
+2025-10-16,LATAM Airlines,LA,30
+2025-10-16,JetBlue Airways,B6,29
+2025-10-16,Frontier Airlines,F9,25
+2025-10-16,Gol,G3,21
+2025-10-16,Copa Airlines,CM,17
+2025-10-16,Qatar Airways,QR,16
+2025-10-16,Volaris,Y4,16
+2025-10-16,WestJet,WS,14
+2025-10-16,Hawaiian Airlines,HA,13
+2025-10-16,Korean Air,KE,13
+2025-10-16,Aeromexico,AM,12
+2025-10-16,Air Canada,AC,12
+2025-10-16,Air France,AF,12
+2025-10-16,Breeze Airways,MX,11
+2025-10-16,British Airways,BA,11
+2025-10-16,KLM,KL,11
+2025-10-16,Air New Zealand,NZ,9
+2025-10-16,Iberia,IB,9
+2025-10-16,Alaska Airlines,AS,8
+2025-10-16,Qantas,QF,8
+2025-10-16,Aer Lingus,EI,7
+2025-10-16,AlphaSky,AS,7
+2025-10-16,Air Canada Rouge,RV,6
+2025-10-16,Air Tahiti Nui,TN,6
+2025-10-16,NetJets Aviation,1I,6
+2025-10-16,El Al,LY,5
+2025-10-16,FedEx,FX,5
+2025-10-16,Japan Airlines,JL,5
+2025-10-16,SAS,SK,5
+2025-10-16,Lufthansa,LH,4
+2025-10-16,SA AVIANCA,AV,4
+2025-10-16,TAP Air Portugal,TP,4
+2025-10-16,empty,,4
+2025-10-16,ANA,NH,3
+2025-10-16,Alitalia,AZ,3
+2025-10-16,Starlux,JX,3
+2025-10-16,Sun Country Airlines,SY,3
+2025-10-16,Virgin Australia,VA,3
+2025-10-16,21 Air,2I,2
+2025-10-16,Air Europa,UX,2
+2025-10-16,Avelo Airlines,XP,2
+2025-10-16,Brussels Airlines,SN,2
+2025-10-16,Cathay Pacific,CX,2
+2025-10-16,Etihad Airways,EY,2
+2025-10-16,Fiji Airways,FJ,2
+2025-10-16,Finnair,AY,2
+2025-10-16,Flexjet,LXJ,2
+2025-10-16,Turkish Airlines,TK,2
+2025-10-16,VivaAerobus,VB,2
+2025-10-16,Aerolineas Argentinas,AR,1
+2025-10-16,Air Transat,TS,1
+2025-10-16,Amerijet International,M6,1
+2025-10-16,Austrian,OS,1
+2025-10-16,Bahamasair,UP,1
+2025-10-16,Baron Aviation Services,BVN,1
+2025-10-16,China Eastern Airlines,MU,1
+2025-10-16,Ethiopian Airlines,ET,1
+2025-10-16,EuroAtlantic Airways,YU,1
+2025-10-16,Gulf Air,GF,1
+2025-10-16,Icelandair,FI,1
+2025-10-16,LOT - Polish Airlines,LO,1
+2025-10-16,Malaysia Airlines,MH,1
+2025-10-16,Mountain Air Cargo,C2,1
+2025-10-16,Philippine Airlines,PR,1
+2025-10-16,Porter Airlines,PD,1
+2025-10-16,Royal Air Maroc,AT,1
+2025-10-16,Royal Jordanian,RJ,1
+2025-10-16,SWISS,LX,1
+2025-10-16,Slate Aviation,S9,1
+2025-10-16,UPS Airlines,5X,1
+2025-10-17,Southwest Airlines,WN,88
+2025-10-17,Delta Air Lines,DL,58
+2025-10-17,LATAM Airlines,LA,40
+2025-10-17,American Airlines,AA,39
+2025-10-17,Azul,AD,39
+2025-10-17,Spirit Airlines,NK,36
+2025-10-17,Frontier Airlines,F9,31
+2025-10-17,JetBlue Airways,B6,30
+2025-10-17,United Airlines,UA,30
+2025-10-17,Virgin Atlantic,VS,30
+2025-10-17,Volaris,Y4,26
+2025-10-17,Aeromexico,AM,16
+2025-10-17,Copa Airlines,CM,16
+2025-10-17,Qatar Airways,QR,16
+2025-10-17,WestJet,WS,16
+2025-10-17,Air Canada,AC,13
+2025-10-17,Air New Zealand,NZ,12
+2025-10-17,Hawaiian Airlines,HA,12
+2025-10-17,Air France,AF,11
+2025-10-17,British Airways,BA,11
+2025-10-17,Breeze Airways,MX,9
+2025-10-17,Korean Air,KE,9
+2025-10-17,Qantas,QF,9
+2025-10-17,Gol,G3,8
+2025-10-17,KLM,KL,8
+2025-10-17,Aer Lingus,EI,6
+2025-10-17,Icelandair,FI,6
+2025-10-17,TAP Air Portugal,TP,6
+2025-10-17,empty,,6
+2025-10-17,Alaska Airlines,AS,5
+2025-10-17,Iberia,IB,5
+2025-10-17,Air Canada Rouge,RV,4
+2025-10-17,El Al,LY,4
+2025-10-17,SA AVIANCA,AV,4
+2025-10-17,Turkish Airlines,TK,4
+2025-10-17,Air Tahiti Nui,TN,3
+2025-10-17,Brussels Airlines,SN,3
+2025-10-17,LOT - Polish Airlines,LO,3
+2025-10-17,SAS,SK,3
+2025-10-17,Sun Country Airlines,SY,3
+2025-10-17,Virgin Australia,VA,3
+2025-10-17,ANA,NH,2
+2025-10-17,Aerolineas Argentinas,AR,2
+2025-10-17,Air Transat,TS,2
+2025-10-17,AlphaSky,AS,2
+2025-10-17,Caribbean Airlines,BW,2
+2025-10-17,Emirates,EK,2
+2025-10-17,Etihad Airways,EY,2
+2025-10-17,Flexjet,LXJ,2
+2025-10-17,Fly Alliance,,2
+2025-10-17,Japan Airlines,JL,2
+2025-10-17,Mountain Air Cargo,C2,2
+2025-10-17,NetJets Aviation,1I,2
+2025-10-17,Porter,PD,2
+2025-10-17,STAjets,,2
+2025-10-17,Singapore Airlines,SQ,2
+2025-10-17,21 Air,2I,1
+2025-10-17,Air Europa,UX,1
+2025-10-17,Alaska Airlines (Oneworld Livery),AS,1
+2025-10-17,Amerijet International,M6,1
+2025-10-17,Avelo Airlines,XP,1
+2025-10-17,Bahamasair,UP,1
+2025-10-17,China Southern Airlines,CZ,1
+2025-10-17,FedEx,FX,1
+2025-10-17,Fiji Airways,FJ,1
+2025-10-17,Finnair,AY,1
+2025-10-17,Kenya Airways,KQ,1
+2025-10-17,Lufthansa,LH,1
+2025-10-17,Malaysia Airlines,MH,1
+2025-10-17,Norse UK,Z0,1
+2025-10-17,Philippine Airlines,PR,1
+2025-10-17,Quest Diagnostics,LBQ,1
+2025-10-17,Royal Air Maroc,AT,1
+2025-10-17,Sky Quest,,1
+2025-10-17,Solairus Aviation,,1
+2025-10-17,flyExclusive,,1
+2025-10-18,Southwest Airlines,WN,106
+2025-10-18,Azul,AD,47
+2025-10-18,American Airlines,AA,46
+2025-10-18,Spirit Airlines,NK,43
+2025-10-18,Delta Air Lines,DL,41
+2025-10-18,JetBlue Airways,B6,39
+2025-10-18,Frontier Airlines,F9,30
+2025-10-18,LATAM Airlines,LA,30
+2025-10-18,United Airlines,UA,30
+2025-10-18,Virgin Atlantic,VS,24
+2025-10-18,Volaris,Y4,24
+2025-10-18,Qatar Airways,QR,18
+2025-10-18,British Airways,BA,17
+2025-10-18,Copa Airlines,CM,17
+2025-10-18,Aer Lingus,EI,14
+2025-10-18,Hawaiian Airlines,HA,14
+2025-10-18,Aeromexico,AM,12
+2025-10-18,Air France,AF,12
+2025-10-18,Air New Zealand,NZ,12
+2025-10-18,WestJet,WS,11
+2025-10-18,Air Canada,AC,10
+2025-10-18,TAP Air Portugal,TP,10
+2025-10-18,Iberia,IB,9
+2025-10-18,KLM,KL,9
+2025-10-18,Breeze Airways,MX,8
+2025-10-18,Gol,G3,8
+2025-10-18,Korean Air,KE,8
+2025-10-18,Icelandair,FI,7
+2025-10-18,Qantas,QF,7
+2025-10-18,AlphaSky,AS,6
+2025-10-18,Brussels Airlines,SN,6
+2025-10-18,Alaska Airlines,AS,5
+2025-10-18,Japan Airlines,JL,5
+2025-10-18,Lufthansa,LH,5
+2025-10-18,NetJets Aviation,1I,5
+2025-10-18,Sun Country Airlines,SY,5
+2025-10-18,Virgin Australia,VA,5
+2025-10-18,empty,,5
+2025-10-18,ANA,NH,4
+2025-10-18,Austrian,OS,4
+2025-10-18,El Al,LY,4
+2025-10-18,Finnair,AY,4
+2025-10-18,Air Tahiti Nui,TN,3
+2025-10-18,Air Transat,TS,3
+2025-10-18,Etihad Airways,EY,3
+2025-10-18,SWISS,LX,3
+2025-10-18,Air Canada Rouge,RV,2
+2025-10-18,Discover Airlines,4Y,2
+2025-10-18,Emirates,EK,2
+2025-10-18,Fiji Airways,FJ,2
+2025-10-18,Flexjet,LXJ,2
+2025-10-18,LOT - Polish Airlines,LO,2
+2025-10-18,Porter,PD,2
+2025-10-18,SA AVIANCA,AV,2
+2025-10-18,Turkish Airlines,TK,2
+2025-10-18,UPS Airlines,5X,2
+2025-10-18,VivaAerobus,VB,2
+2025-10-18,Air Europa,UX,1
+2025-10-18,Amerijet International,M6,1
+2025-10-18,Atlas Air,5Y,1
+2025-10-18,Avelo Airlines,XP,1
+2025-10-18,BermudAir,2T,1
+2025-10-18,Cathay Pacific,CX,1
+2025-10-18,Ethiopian Airlines,ET,1
+2025-10-18,EuroAtlantic Airways,YU,1
+2025-10-18,FedEx,FX,1
+2025-10-18,Gulf Air,GF,1
+2025-10-18,Malaysia Airlines,MH,1
+2025-10-18,Norse,N0,1
+2025-10-18,Norse UK,Z0,1
+2025-10-18,Philippine Airlines,PR,1
+2025-10-18,Porter Airlines,PD,1
+2025-10-18,Private owner,,1
+2025-10-18,Royal Air Maroc,AT,1
+2025-10-18,Royal Jordanian,RJ,1
+2025-10-18,SAS,SK,1
+2025-10-18,Singapore Airlines,SQ,1
+2025-10-18,Starlux,JX,1
+2025-10-18,Volaris Costa Rica,Q6,1
+2025-10-18,,A1,1
+2025-10-19,Southwest Airlines,WN,72
+2025-10-19,Delta Air Lines,DL,44
+2025-10-19,Spirit Airlines,NK,38
+2025-10-19,Frontier Airlines,F9,35
+2025-10-19,American Airlines,AA,33
+2025-10-19,JetBlue Airways,B6,31
+2025-10-19,Azul,AD,27
+2025-10-19,LATAM Airlines,LA,25
+2025-10-19,United Airlines,UA,25
+2025-10-19,Volaris,Y4,25
+2025-10-19,Virgin Atlantic,VS,21
+2025-10-19,Copa Airlines,CM,15
+2025-10-19,WestJet,WS,14
+2025-10-19,Aeromexico,AM,13
+2025-10-19,Air France,AF,12
+2025-10-19,Qatar Airways,QR,11
+2025-10-19,Air Canada,AC,10
+2025-10-19,Air New Zealand,NZ,10
+2025-10-19,KLM,KL,10
+2025-10-19,TAP Air Portugal,TP,9
+2025-10-19,Hawaiian Airlines,HA,8
+2025-10-19,Qantas,QF,8
+2025-10-19,Breeze Airways,MX,7
+2025-10-19,British Airways,BA,7
+2025-10-19,El Al,LY,6
+2025-10-19,Korean Air,KE,6
+2025-10-19,AlphaSky,AS,5
+2025-10-19,Icelandair,FI,5
+2025-10-19,ANA,NH,4
+2025-10-19,Gol,G3,4
+2025-10-19,Iberia,IB,4
+2025-10-19,Sun Country Airlines,SY,4
+2025-10-19,Aer Lingus,EI,3
+2025-10-19,Air Canada Rouge,RV,3
+2025-10-19,Lufthansa,LH,3
+2025-10-19,NetJets Aviation,1I,3
+2025-10-19,SAS,SK,3
+2025-10-19,Turkish Airlines,TK,3
+2025-10-19,Air Transat,TS,2
+2025-10-19,Alaska Airlines,AS,2
+2025-10-19,Atlantic Airways,RC,2
+2025-10-19,Brussels Airlines,SN,2
+2025-10-19,Etihad Airways,EY,2
+2025-10-19,FedEx,FX,2
+2025-10-19,GlobalX,G6,2
+2025-10-19,Japan Airlines,JL,2
+2025-10-19,National Airlines,N8,2
+2025-10-19,Porter,PD,2
+2025-10-19,Royal Jordanian,RJ,2
+2025-10-19,Virgin Australia,VA,2
+2025-10-19,empty,,2
+2025-10-19,Aerolineas Argentinas,AR,1
+2025-10-19,Air Europa,UX,1
+2025-10-19,Air Tahiti Nui,TN,1
+2025-10-19,Allegiant Air,G4,1
+2025-10-19,Avelo Airlines,XP,1
+2025-10-19,Cathay Pacific,CX,1
+2025-10-19,China Eastern Airlines,MU,1
+2025-10-19,Condor,DE,1
+2025-10-19,Emirates,EK,1
+2025-10-19,EuroAtlantic Airways,YU,1
+2025-10-19,Kenya Airways,KQ,1
+2025-10-19,LOT - Polish Airlines,LO,1
+2025-10-19,Malaysia Airlines,MH,1
+2025-10-19,Philippine Airlines,PR,1
+2025-10-19,Presidential Aviation,,1
+2025-10-19,SA AVIANCA,AV,1
+2025-10-19,SWISS,LX,1
+2025-10-19,Saudia,SV,1
+2025-10-19,Singapore Airlines,SQ,1
+2025-10-20,Southwest Airlines,WN,118
+2025-10-20,Delta Air Lines,DL,76
+2025-10-20,American Airlines,AA,57
+2025-10-20,Azul,AD,52
+2025-10-20,Frontier Airlines,F9,47
+2025-10-20,Spirit Airlines,NK,46
+2025-10-20,JetBlue Airways,B6,45
+2025-10-20,United Airlines,UA,44
+2025-10-20,LATAM Airlines,LA,42
+2025-10-20,Virgin Atlantic,VS,40
+2025-10-20,Volaris,Y4,31
+2025-10-20,Qatar Airways,QR,23
+2025-10-20,British Airways,BA,22
+2025-10-20,Air Canada,AC,20
+2025-10-20,WestJet,WS,20
+2025-10-20,Air New Zealand,NZ,17
+2025-10-20,Copa Airlines,CM,17
+2025-10-20,Aeromexico,AM,16
+2025-10-20,Breeze Airways,MX,16
+2025-10-20,Aer Lingus,EI,15
+2025-10-20,KLM,KL,15
+2025-10-20,Air France,AF,13
+2025-10-20,El Al,LY,13
+2025-10-20,Gol,G3,13
+2025-10-20,Hawaiian Airlines,HA,13
+2025-10-20,Iberia,IB,12
+2025-10-20,Korean Air,KE,12
+2025-10-20,Qantas,QF,11
+2025-10-20,Japan Airlines,JL,10
+2025-10-20,TAP Air Portugal,TP,9
+2025-10-20,NetJets Aviation,1I,8
+2025-10-20,ANA,NH,6
+2025-10-20,AlphaSky,AS,6
+2025-10-20,Etihad Airways,EY,6
+2025-10-20,Lufthansa,LH,6
+2025-10-20,SAS,SK,6
+2025-10-20,empty,,6
+2025-10-20,Air Tahiti Nui,TN,5
+2025-10-20,Alaska Airlines,AS,5
+2025-10-20,Icelandair,FI,5
+2025-10-20,Sun Country Airlines,SY,5
+2025-10-20,Air Canada Rouge,RV,4
+2025-10-20,Brussels Airlines,SN,4
+2025-10-20,Turkish Airlines,TK,4
+2025-10-20,Aerolineas Argentinas,AR,3
+2025-10-20,Air Europa,UX,3
+2025-10-20,Cathay Pacific,CX,3
+2025-10-20,DHL Air,D0,3
+2025-10-20,Kenya Airways,KQ,3
+2025-10-20,SA AVIANCA,AV,3
+2025-10-20,Air Serbia,JU,2
+2025-10-20,Avelo Airlines,XP,2
+2025-10-20,Emirates,EK,2
+2025-10-20,Finnair,AY,2
+2025-10-20,Gulf Air,GF,2
+2025-10-20,LOT - Polish Airlines,LO,2
+2025-10-20,SWISS,LX,2
+2025-10-20,Saudia,SV,2
+2025-10-20,Singapore Airlines,SQ,2
+2025-10-20,Virgin Australia,VA,2
+2025-10-20,Air Transat,TS,1
+2025-10-20,Allegiant Air,G4,1
+2025-10-20,Austrian,OS,1
+2025-10-20,China Eastern Airlines,MU,1
+2025-10-20,Discover Airlines,4Y,1
+2025-10-20,FedEx,FX,1
+2025-10-20,Jet Aviation Flight Services,,1
+2025-10-20,Malaysia Airlines,MH,1
+2025-10-20,National Airlines,N8,1
+2025-10-20,Norse,N0,1
+2025-10-20,Philippine Airlines,PR,1
+2025-10-20,PlaneSense,,1
+2025-10-20,Porter,PD,1
+2025-10-20,Quest Diagnostics,LBQ,1
+2025-10-20,Royal Air Maroc,AT,1
+2025-10-20,Royal Jordanian,RJ,1
+2025-10-20,Sky Quest,,1
+2025-10-20,Starlux,JX,1
+2025-10-20,,A1,1
+2025-10-21,Southwest Airlines,WN,84
+2025-10-21,Delta Air Lines,DL,55
+2025-10-21,American Airlines,AA,44
+2025-10-21,Azul,AD,31
+2025-10-21,LATAM Airlines,LA,31
+2025-10-21,United Airlines,UA,31
+2025-10-21,Virgin Atlantic,VS,29
+2025-10-21,Spirit Airlines,NK,27
+2025-10-21,JetBlue Airways,B6,25
+2025-10-21,Qatar Airways,QR,21
+2025-10-21,WestJet,WS,20
+2025-10-21,British Airways,BA,19
+2025-10-21,Air Canada,AC,16
+2025-10-21,Aeromexico,AM,15
+2025-10-21,Aer Lingus,EI,14
+2025-10-21,Frontier Airlines,F9,14
+2025-10-21,Air New Zealand,NZ,13
+2025-10-21,Air France,AF,12
+2025-10-21,Gol,G3,12
+2025-10-21,Iberia,IB,12
+2025-10-21,KLM,KL,12
+2025-10-21,Copa Airlines,CM,11
+2025-10-21,Volaris,Y4,10
+2025-10-21,Hawaiian Airlines,HA,8
+2025-10-21,Korean Air,KE,8
+2025-10-21,Lufthansa,LH,8
+2025-10-21,empty,,8
+2025-10-21,Brussels Airlines,SN,7
+2025-10-21,FedEx,FX,7
+2025-10-21,Austrian,OS,6
+2025-10-21,Breeze Airways,MX,6
+2025-10-21,El Al,LY,6
+2025-10-21,Japan Airlines,JL,6
+2025-10-21,NetJets Aviation,1I,6
+2025-10-21,Qantas,QF,6
+2025-10-21,SWISS,LX,6
+2025-10-21,TAP Air Portugal,TP,6
+2025-10-21,AlphaSky,AS,5
+2025-10-21,UPS Airlines,5X,5
+2025-10-21,Air Canada Rouge,RV,4
+2025-10-21,Discover Airlines,4Y,4
+2025-10-21,Icelandair,FI,4
+2025-10-21,ANA,NH,3
+2025-10-21,Aerolineas Argentinas,AR,3
+2025-10-21,Air Tahiti Nui,TN,3
+2025-10-21,Cathay Pacific,CX,3
+2025-10-21,Finnair,AY,3
+2025-10-21,SAS,SK,3
+2025-10-21,Air Europa,UX,2
+2025-10-21,Alaska Airlines,AS,2
+2025-10-21,Baron Aviation Services,BVN,2
+2025-10-21,China Eastern Airlines,MU,2
+2025-10-21,Etihad Airways,EY,2
+2025-10-21,EuroAtlantic Airways,YU,2
+2025-10-21,Gulf Air,GF,2
+2025-10-21,LOT - Polish Airlines,LO,2
+2025-10-21,Malaysia Airlines,MH,2
+2025-10-21,Philippine Airlines,PR,2
+2025-10-21,Royal Jordanian,RJ,2
+2025-10-21,Sun Country Airlines,SY,2
+2025-10-21,Turkish Airlines,TK,2
+2025-10-21,Virgin Australia,VA,2
+2025-10-21,Bahamasair,UP,1
+2025-10-21,DHL Air,D0,1
+2025-10-21,Emirates,EK,1
+2025-10-21,Fiji Airways,FJ,1
+2025-10-21,Flexjet,LXJ,1
+2025-10-21,Gryphon Air,,1
+2025-10-21,Jet Aviation Flight Services,,1
+2025-10-21,Mountain Air Cargo,C2,1
+2025-10-21,Norse UK,Z0,1
+2025-10-21,PlaneSense,,1
+2025-10-21,Precision Aircraft Management,,1
+2025-10-21,SA AVIANCA,AV,1
+2025-10-21,Saudia,SV,1
+2025-10-21,Starlux,JX,1
+2025-10-21,Vista America,,1
+2025-10-22,Southwest Airlines,WN,83
+2025-10-22,Delta Air Lines,DL,54
+2025-10-22,American Airlines,AA,43
+2025-10-22,LATAM Airlines,LA,39
+2025-10-22,Azul,AD,36
+2025-10-22,United Airlines,UA,34
+2025-10-22,Virgin Atlantic,VS,27
+2025-10-22,JetBlue Airways,B6,24
+2025-10-22,Frontier Airlines,F9,22
+2025-10-22,Spirit Airlines,NK,20
+2025-10-22,Volaris,Y4,19
+2025-10-22,Air Canada,AC,18
+2025-10-22,Qatar Airways,QR,18
+2025-10-22,Air France,AF,15
+2025-10-22,Air New Zealand,NZ,14
+2025-10-22,British Airways,BA,14
+2025-10-22,Aeromexico,AM,13
+2025-10-22,Copa Airlines,CM,12
+2025-10-22,Gol,G3,12
+2025-10-22,KLM,KL,12
+2025-10-22,Iberia,IB,11
+2025-10-22,Qantas,QF,11
+2025-10-22,WestJet,WS,11
+2025-10-22,UPS Airlines,5X,10
+2025-10-22,Lufthansa,LH,9
+2025-10-22,El Al,LY,8
+2025-10-22,Hawaiian Airlines,HA,8
+2025-10-22,empty,,8
+2025-10-22,Aer Lingus,EI,7
+2025-10-22,Brussels Airlines,SN,7
+2025-10-22,Korean Air,KE,7
+2025-10-22,Breeze Airways,MX,6
+2025-10-22,AlphaSky,AS,4
+2025-10-22,FedEx,FX,4
+2025-10-22,Japan Airlines,JL,4
+2025-10-22,NetJets Aviation,1I,4
+2025-10-22,ANA,NH,3
+2025-10-22,Air Canada Rouge,RV,3
+2025-10-22,Air Tahiti Nui,TN,3
+2025-10-22,Alaska Airlines,AS,3
+2025-10-22,Austrian,OS,3
+2025-10-22,Cathay Pacific,CX,3
+2025-10-22,Icelandair,FI,3
+2025-10-22,Sun Country Airlines,SY,3
+2025-10-22,TAP Air Portugal,TP,3
+2025-10-22,21 Air,2I,2
+2025-10-22,Aerolineas Argentinas,AR,2
+2025-10-22,Etihad Airways,EY,2
+2025-10-22,EuroAtlantic Airways,YU,2
+2025-10-22,Finnair,AY,2
+2025-10-22,Flexjet,LXJ,2
+2025-10-22,Gulf Air,GF,2
+2025-10-22,LOT - Polish Airlines,LO,2
+2025-10-22,Malaysia Airlines,MH,2
+2025-10-22,Philippine Airlines,PR,2
+2025-10-22,Royal Jordanian,RJ,2
+2025-10-22,SA AVIANCA,AV,2
+2025-10-22,SWISS,LX,2
+2025-10-22,Starlux,JX,2
+2025-10-22,Virgin Australia,VA,2
+2025-10-22,Air Europa,UX,1
+2025-10-22,Air Transat,TS,1
+2025-10-22,Alaska Airlines (Boeing 100 years strong Livery),AS,1
+2025-10-22,Avelo Airlines,XP,1
+2025-10-22,Baron Aviation Services,BVN,1
+2025-10-22,BermudAir,2T,1
+2025-10-22,China Eastern Airlines,MU,1
+2025-10-22,DHL Air,D0,1
+2025-10-22,Discover Airlines,4Y,1
+2025-10-22,Ethiopian Airlines,ET,1
+2025-10-22,Fiji Airways,FJ,1
+2025-10-22,Hex'Air,UD,1
+2025-10-22,Mountain Air Cargo,C2,1
+2025-10-22,Norse,N0,1
+2025-10-22,Norse UK,Z0,1
+2025-10-22,PlaneSense,,1
+2025-10-22,Porter,PD,1
+2025-10-22,Royal Air Maroc,AT,1
+2025-10-22,SAS,SK,1
+2025-10-22,Saudia,SV,1
+2025-10-22,Turkish Airlines,TK,1
+2025-10-22,Wheels Up,,1
+2025-10-22,,A1,1
